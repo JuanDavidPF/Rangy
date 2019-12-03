@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273418868431",
+    "firebase_url": "https://rangy-bebe6.firebaseio.com",
+    "project_id": "rangy-bebe6",
+    "storage_bucket": "rangy-bebe6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273418868431:android:ea3e200a6220c7901709ba",
+        "android_client_info": {
+          "package_name": "com.example.rangy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273418868431-in1lpvu55v0vn0o8f7cnj2vh75h436e4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rangy",
+            "certificate_hash": "2eece805a4f3e5f74974d318eb32f88ec42ee927"
+          }
+        },
+        {
+          "client_id": "273418868431-98sjoi9g222j3q7735afcqkukcie9o9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Io4pt2BSqF0hVZ-9jxPV_049q5-ByFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273418868431-98sjoi9g222j3q7735afcqkukcie9o9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

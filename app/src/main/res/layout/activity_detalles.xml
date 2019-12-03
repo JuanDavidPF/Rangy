@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalles">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Reserva_Toolbar"
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        android:paddingTop="20dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goBack"
+                android:paddingLeft="30dp"
+                app:srcCompat="@drawable/back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:paddingLeft="30dp"
+                    android:text="Solicitud de reserva"
+                    android:textColor="#5F5E5E"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/laptopCardDetails"
+                    app:layout_constraintTop_toBottomOf="@+id/laptopCardDetails" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="70dp"
+                    app:srcCompat="@drawable/clock" />
+            </LinearLayout>
+        </LinearLayout>
+
+        />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reserva_Toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tabletCardDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:srcCompat="@drawable/detailstablet" />
+
+                <ImageView
+                    android:id="@+id/mainTablet"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-45dp"
+                    android:onClick="showModal"
+                    app:srcCompat="@drawable/tabfront" />
+
+                <LinearLayout
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="120dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/leftTablet"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/tableft" />
+
+                    <ImageView
+                        android:id="@+id/midTablet"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/tabmid" />
+
+                    <ImageView
+                        android:id="@+id/rightTablet"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/tabright" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/laptopCardDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:srcCompat="@drawable/detailslaptop" />
+
+                <ImageView
+                    android:id="@+id/mainLaptop"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-45dp"
+                    android:onClick="showModal"
+                    app:srcCompat="@drawable/lapfront" />
+
+                <LinearLayout
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="120dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/leftLaptop"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/lapleft" />
+
+                    <ImageView
+                        android:id="@+id/midLaptop"
+                        android:layout_width="10dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/lapmid" />
+
+                    <ImageView
+                        android:id="@+id/rightLaptop"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/lapright" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/headphonesCardDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:srcCompat="@drawable/detailslheadphones" />
+
+                <ImageView
+                    android:id="@+id/mainHeadphones"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-45dp"
+                    android:onClick="showModal"
+                    app:srcCompat="@drawable/headfront" />
+
+
+                <LinearLayout
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="120dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/leftHead"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/headleft" />
+
+                    <ImageView
+                        android:id="@+id/midHead"
+                        android:layout_width="10dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/headmid" />
+
+                    <ImageView
+                        android:id="@+id/rightHead"
+                        android:layout_width="30dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:onClick="changeImage"
+                        app:srcCompat="@drawable/headright" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

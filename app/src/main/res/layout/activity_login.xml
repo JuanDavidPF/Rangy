@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+
+        android:id="@+id/logoContainer_in"
+        android:layout_width="633dp"
+        android:layout_height="286dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logocontainer" />
+
+    <ImageView
+
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoContainer_in"
+        app:layout_constraintEnd_toEndOf="@+id/logoContainer_in"
+        app:layout_constraintStart_toStartOf="@+id/logoContainer_in"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+
+        android:id="@+id/logIn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pt_sans_bold"
+        android:text="@string/logIn_title"
+        android:textColor="#373737"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoContainer_in"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+
+        android:id="@+id/userIn_et"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:forceDarkAllowed="false"
+        android:hint="@string/user_input"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColorHint="#ADADAD"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logIn_tv" />
+
+    <EditText
+
+
+        android:id="@+id/passIn_et"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="@string/pass_input"
+        android:inputType="textPassword"
+        android:textColorHint="#ADADAD"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIn_et" />
+
+    <Button
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="265dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4ED3B4"
+        android:elevation="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:onClick="logIn"
+        android:text="@string/logIn_btn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIn_img"
+        app:layout_constraintEnd_toEndOf="@+id/btnIn_img"
+        app:layout_constraintStart_toStartOf="@+id/btnIn_img"
+        app:layout_constraintTop_toTopOf="@+id/btnIn_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+
+        android:id="@+id/btnIn_img"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="logIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passIn_et"
+        app:srcCompat="@drawable/btn" />
+
+    <Button
+
+        android:id="@+id/forgotIn_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/forgot_credentials"
+        android:textAllCaps="false"
+        android:textColor="#F9BE8A"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp_img"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+
+        android:id="@+id/signUp_link"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:onClick="goToRegister"
+        android:text="@string/signUp_link"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/forgotIn_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIn_img"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

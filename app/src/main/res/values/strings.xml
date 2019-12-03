@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Rangy</string>
+
+    <!--Español-->
+
+
+    <!--Registro-->
+
+    <string name="signUp_title">Registrate</string>
+    <string name="user_input">Ingresa tu correo</string>
+    <string name="pass_input">Ingresa una contraseña</string>
+    <string name="rePass_input">Verifica la contraseña</string>
+    <string name="logIn_link">Iniciar sesión</string>
+    <string name="singUp_btn">Registrarse</string>
+    <string name="forgot_credentials">¿Olvidaste tu usuario o contraseña?</string>
+
+    <!--Login-->
+
+    <string name="logIn_title">Inicia sesión</string>
+    <string name="logIn_btn">Iniciar sesión</string>
+    <string name="signUp_link">Registrarse</string>
+    <string name="title_activity_reserva">Reserva</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!--Registro-->
+    <string name="book_title">Reserva de equipos digitales</string>
+
+
+</resources>
